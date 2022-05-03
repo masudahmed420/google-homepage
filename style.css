@@ -47,62 +47,58 @@ body{
 
 /* header complete */
 /* center start */
-
 .center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
     height: 95vh;
-}
-.center .center1 .text{
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px 40px;
-    border: solid 1px rgb(68, 68, 68);
-    outline: none;
-    border-radius: 20px;
-    font-size: 16px;
+    position: relative;
 }
 .center .center1{
     position: relative;
-    width: 580px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.center .center1 .text{  
+    padding: 13px 30px;
+    border-radius: 20px;
+    padding-left: 60px;
     display: flex;
     justify-content: center;
+    position: relative;
+
 }
 .center .center1 .center12{
     position: absolute;
-/*     top: 32px; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 95%;
-/*     left: 20px; */
-    margin: 32px;
+    top: 12px;
     pointer-events: none;
-}
-.center .button{
-    margin-top: 20px;
-}
-.center .button button{
-    padding: 8px 14px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.center .button button:hover{
-    border: 1px solid rgb(124, 124, 124);
+    padding-left: 20px;
+
 }
 
-/* center complete
-footer start */
+/* center complete */
+/* mobile responsive */
 
+@media ( max-width: 768px){
+    .center .center1{
+    }
+    /* .center .center1 .center12{
+        width: 55%; */
+    }
+}
+
+/* footer start */
 footer{
     height: 50px;
     /* width: 100%; */
     background-color: rgb(90, 90, 90);
-    position: sticky;
+    position: absolute;
     bottom: 0;
     margin: 0;
     right: 0;
@@ -128,45 +124,3 @@ footer .main ul li a{
     color: white;
 }
 
-/* mobile view */
-@media ( max-width: 540px){
-    .center .center1 .text {
-    width: 43%; 
-    }
-    .center .center1 .center12{
-        width: 52%;
-        margin: 32px 0px 0px 0px;
-    }
-/*     footer .main ul{
-        display: flex;
-        flex-direction: column;
-    }
-    footer{
-        height: 100px;
-        width: 100%;
-    } */
-    .center .center1{
-        max-width: 500px;
-    }
-}
-
-/* mobile view complete
-tablet view */
-@media ( min-width: 541px) and ( max-width: 1023px){
-    .center .center1 .text{
-        width: 65%;
-    }
-    .center .center1 .center12{
-        width: 73%;
-    }
-}
-@media (max-width: 635px){
-    footer .main ul{
-        display: flex;
-        flex-direction: column;
-    }
-    footer{
-        height: 100px;
-        width: 100%;
-    }
-}
