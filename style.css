@@ -58,7 +58,6 @@ section .main .searchbox{
     margin-top: 20px;
     display: flex;
     justify-content:center ;
-    right: 10px;
 }
 section .main .searchbox .search{
     width: 98%;
