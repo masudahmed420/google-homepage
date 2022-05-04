@@ -1,49 +1,54 @@
-/* header */
-
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.header{
-    margin: 20px;
+section{
     position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-.header ul{
+section header{
     position: absolute;
-    top: 0px;
-    right: 0;
-    margin: 0;
-}
-.header ul{
+    top: 0;
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
 }
-.header ul li{
-    padding-right: 20px;
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
     list-style: none;
-    margin-top: 10px;
+    margin-left: 20px;
 }
-.header ul li a {
+section header ul li a{
+    color: #111;
     text-decoration: none;
-    color: rgb(27, 27, 27);
+    font-size: 13px;
 }
-.header ul li button{
-    background-color: rgb(0, 0, 187);
-    outline: none;
+section header ul li button{
+    background: #4584ef;
     border: none;
-    padding: 10px 15px;
-    margin-top: -10px;
-    border-radius: 3px;
-}
-.header ul li button:hover{
-    background-color:rgb(250, 144, 4) ;
-}
-.header ul li button a{
-    color: white;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
     font-size: 14px;
     font-weight: bold;
-
+    border-radius: 3px;
+    cursor: pointer;
 }
+<<<<<<< HEAD
+section .main{
+    width: 680px;
+=======
 
 /* header complete */
 /* center start */
@@ -55,10 +60,132 @@ section{
     position: relative;
 }
 section .center{
+>>>>>>> main
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+}
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content:center ;
+    right: 10px;
+}
+section .main .searchbox .search{
+    width: 98%;
+    padding: 13px;
+    padding-left: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0;
+    width: 92%;
+    display: flex;
+    padding: 12px 30px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+section .main .buttons button:hover{
+    border: 1px solid #ccc;
+}
+section .main .lang{
+    margin-top: 20px;
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+section .footer .row ul{
+    display: flex;
+}
+section .footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+
+
+/*Desktop*/
+@media (min-width:1024px){
+
+}
+
+/*Tablet View*/
+@media (min-width:769px) and (max-width:1023px){
+    section header ul li button{
+        background-color: tomato;
+    }
+}
+
+
+
+/*Mobile View*/
+@media (max-width:768px){
+    section .main .searchbox .search{
+        width: 78%;
+    }
+    section .main .searchbox .icons{
+        width: 84%;
+    }
+    section .footer .row ul{
+        display: block;
+    }
+    section header ul li button{
+        background-color: blue;
+    }
+}
+ .test{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative; 
+} 
+.test .box{
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: green;
+    position: relative;
+=======
     height: 95vh;
     position: relative;
     width: 680px;
@@ -113,4 +240,5 @@ section .center{
     display: flex;
     justify-content: center;
 
+>>>>>>> main
 }
